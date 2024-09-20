@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 1px 2px 0px 1px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: border-box;
+}
+
+/* Navigation Bar */
+.navbar{
+    height: 110px;
+    background-color: #FFFFFF;
+    color: black;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+
+.nav-logo{
+    height: 80px;
+    width: 270px;
+    padding-bottom: 2px;
+    flex: 2;
+}
+
+.logo{
+    width: 270px;
+    height: 70%;
+    padding: 12.525px 0px;
+}
+
+nav{
+    flex: 3;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 70px;
+}
+
+a{
+    padding-bottom: 7px;
+    text-decoration: none;
+    color: #555;
+    font-size: larger;
+}
+a:hover{
+    border-bottom: 3px #1a4ad8 solid ;
+}
+
+.user-logo a:hover {
+    border-bottom: none;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: #555;
+    font-size: larger;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    font-size: medium;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/* ---- */  
+
+.carousel-container {
+    background-image: url("images/carousel-background.png");
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    height: 300px; 
+}
+
+@keyframes carouselAnimation {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(-300%); }
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    /*overflow: hidden;*/
+    position: relative;
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    height: 700px; 
+}
+
+/* Ensure the product container is below the carousel container */
+
+
+.carousel-slide {
+    flex: 0 0 100%;
+    animation: carouselAnimation 25s infinite;
+}
+
+.carousel img {
+    max-width: 100%; 
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    align-items: center;
+    object-fit: contain;
+}
+
+.product-container {
+    background-image: url("images/carousel-background.png");
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+    z-index:0;
+    margin-top: 20px; /* Add margin-top to create space between carousel and products */
+}
+
+/* Center the product images */
+.product-item {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex; /* Add flex display to align items */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+    background-color: white;
+}
+
+.product-image {
+    width: 200px; 
+    height: 200px; 
+    overflow: hidden;
+    display: flex; /* Add flex display to align items */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.product-image img {
+    max-width: 100%; 
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain; /* Ensure the full image is visible */
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-name {
+    padding: 10px;
+}

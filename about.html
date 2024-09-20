@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Academia Treasures</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: transparent;
+            color: #fff;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #1a4ad8;
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            color: #1a4ad8;
+            font-weight: bold;
+        }
+
+        .team-member {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            max-width: 150px;
+        }
+
+        .team-member h3 {
+            margin-top: 10px;
+            color: #1a4ad8;
+        }
+
+        footer {
+            background-color: #1a4ad8;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        * {
+    margin: 0;
+    padding: 1px 2px 0px 1px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: border-box;
+}
+
+/* Navigation Bar */
+.navbar{
+    height: 110px;
+    background-color: #FFFFFF;
+    color: black;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+
+.nav-logo{
+    height: 80px;
+    width: 270px;
+    padding-bottom: 2px;
+    flex: 2;
+}
+
+.logo{
+    width: 270px;
+    height: 70%;
+    padding: 12.525px 0px;
+}
+
+nav{
+    flex: 3;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 70px;
+}
+
+a{
+    padding-bottom: 7px;
+    text-decoration: none;
+    color: #555;
+    font-size: larger;
+}
+a:hover{
+    border-bottom: 3px #1a4ad8 solid ;
+}
+
+.user-logo a:hover {
+    border-bottom: none;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: #555;
+    font-size: larger;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    font-size: medium;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/* ---- */  
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <img class="logo" src="images\academia-treasures-high-resolution-logo-transparent.png">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li>
+                        
+                        <div class="dropdown">
+                            <a>Product</a>
+                            <div class="dropdown-content">
+                              <a href="material.html">Material</a>
+                              <a href="draftingtools.html">Drafting Tools</a>
+                              <a href="other.html">Other</a>
+                            </div>
+                          </div>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li class="user-logo"><a href="profile.php"><i class="fas fa-user" style="color: #555;"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1>About Academia Treasures</h1>
+    </header>
+    <div class="container">
+        <p>Welcome to <span class="highlight">Academia Treasures</span>, your one-stop destination for all your academic needs. We are dedicated to providing high-quality educational materials and tools to students, teachers, and professionals.</p>
+        
+        <h2>Our Mission</h2>
+        <p>At Academia Treasures, our mission is to empower learners of all ages with the resources they need to succeed in their educational journey. Whether you're a student preparing for exams, a teacher seeking teaching aids, or a professional looking to enhance your skills, we have you covered.</p>
+        
+        <h2>Meet Our Team</h2>
+        <div class="team-member">
+            <img src="images\ketavshah.jpg" alt="Team Member 1">
+            <h3>Ketav Shah</h3>
+            <p>Founder & CEO</p>
+        </div>
+        <div class="team-member">
+            <img src="images/jaygor.jpg" alt="Team Member 2">
+            <h3>Jay Gor</h3>
+            <p>Head of Operations</p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Academia Treasures. All rights reserved.
+    </footer>
+</body>
+</html>

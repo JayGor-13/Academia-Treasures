@@ -1,0 +1,69 @@
+body {
+    background-image: url("background-image-signup.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    padding: 5% 50px 20px;
+}
+
+.signup {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px; 
+    max-width: 300px; 
+    margin: 0 auto;
+}
+
+.signup:hover{
+    background: rgba(255, 255, 255, 0.75);
+    border-color: #5c55e9;
+    transition: background 0.3s ease-in;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #6c63ff;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #6c63ff;
+    color: #fff;
+    cursor: pointer;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #564dff;
+}
+
+.button{
+    display: flex;
+}
+
+.submit{
+    padding-left: 47.89px;
+    padding-right: 47.89px;
+}
+
+.reset{
+    padding-right: 47.89px;
+}
